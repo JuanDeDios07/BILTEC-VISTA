@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="car">
+        <div class="card-header">
+            <h3>
+                Detalle Venta
+            </h3>
+        </div>
+        <div class="car-body">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Codigo</th>
+                        <th>N° Comprobante</th>
+                        <th>Total Ventas</th>
+                        <th>Fecha</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let itemboleta of ventas" class="text-center">
+                        <td>{{itemboleta.idventas}}</td>
+                        <td>{{itemboleta.numComprobante}}</td>
+                        <td>{{itemboleta.totalVentas}}</td>
+                        <td>{{itemboleta.fecha}}</td>
+                        <td>{{itemboleta.precio}}</td>
+                        <td>{{itemboleta.cantidad}}</td>
+                        
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

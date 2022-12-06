@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="car">
+        <div class="card-header">
+            <h3>
+                Boleta
+            </h3>
+        </div>
+        <div class="car-body">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>N° BOLETA</th>
+                        <th>DNI</th>
+                        <th>FECHA</th>
+                      
+                        <th>DIRECCION</th>
+                        <th>CANTIDAD</th>
+                        <th>DESCRIPCION</th>
+                        <th>IMPORTE</th>
+                        <th>TOTAL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let itemboleta of boletas" class="text-center">
+                        <td>{{itemboleta.numBoleta}}</td>
+                        <td>{{itemboleta.dni}}</td>
+                        <td>{{itemboleta.fecha}}</td>
+                       
+                        <td>{{itemboleta.direccion}}</td>
+                        <td>{{itemboleta.cantidad}}</td>
+                        <td>{{itemboleta.descripcion}}</td>
+                        <td>{{itemboleta.importe}}</td>
+                        <td>{{itemboleta.total}}</td>
+                       
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

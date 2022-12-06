@@ -1,0 +1,62 @@
+<div class="container">
+    <div class="car">
+        <div class="card-header">
+            <h3>
+                Agregar Ventas
+            </h3>
+        </div>
+        <div class="car-body">
+            <form action="">
+                <div class="form_group">
+                    <label for="idventas">N° Venta:</label>
+                    <input type="text" [(ngModel)]="ventas.idventas" class="from_control" name="idventas">
+                </div>
+                <br>
+
+                <div class="form_group">
+                    <label for="numComprobante">Num Comprobate:</label>
+                    <input type="number" [(ngModel)]="ventas.numComprobante" class="from_control" name="numComprobante">
+                </div>
+                <br>
+                <div class="form_group">
+                    <label for="totalventas">Total Ventas:</label>
+                    <input type="number" [(ngModel)]="ventas.totalVentas" class="from_control" name="totalventas">
+                </div>
+                <br>
+                <div class="form_group">
+                    <label for="fecha">Fecha:</label>
+                    <input type="date" [(ngModel)]="ventas.fecha" class="from_control" name="fecha">
+                </div>
+                <br>
+                <div class="form_group">
+                    <label for="precio">Precio:</label>
+                    <input type="number" class="from_control" [(ngModel)]="ventas.precio" name="precio">
+                </div>
+                <br>
+                <div class="form_group">
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" class="from_control" [(ngModel)]="ventas.cantidad" name="cantidad">
+                </div>
+                <br>
+
+                <div class="form_group">
+                    <label for="comprobante">Tipo Comprobante:</label>
+                    <input type="text" [(ngModel)]="ventas.comprobantes" class="from_control" name="comprobante">
+                </div>
+                <br>
+
+
+                <div class="form_group">
+                    <label for="idpersona">ID Persona:</label>
+                    <input type="text" [(ngModel)]="ventas.persona" class="from_control" name="idpersona">
+
+                </div>
+                <br>
+                
+                <button (click)="Generar()" class="btn btn-danger" red><a
+                        href="http://localhost:4200/venta/detalle">Guardar</a> </button>
+
+            </form>
+        </div>
+    </div>
+</div>

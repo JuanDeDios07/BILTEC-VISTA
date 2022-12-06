@@ -1,0 +1,62 @@
+<div class="container">
+    <div class="car">
+        <div class="card-header">
+            <h3>
+              Agregar Boleta
+            </h3>
+        </div>
+        <div class="car-body">
+            <form action="">
+                <div class="form_group">
+                    <label for="numboleta">N° Boleta:</label>
+                    <input type="number" [(ngModel)]="boleta.numBoleta" class="from_control" name="numboleta">
+                </div>
+                <br>
+
+                <div class="form_group">
+                    <label for="dni">DNI:</label>
+                    <input type="text" [(ngModel)]="boleta.dni" class="from_control" name="dni">
+                </div>
+<br>
+                <div class="form_group">
+                    <label for="fecha">Fecha:</label>
+                    <input type="date" [(ngModel)]="boleta.fecha" class="from_control" name="fecha">
+                </div>
+<br>
+                <div class="form_group">
+                    <label for="senor">Cliente:</label>
+                    <input type="text" [(ngModel)]="boleta.senor" class="from_control" name="senor">
+                </div>
+<br>
+                <div class="form_group">
+                    <label for="direccion">Direccion:</label>
+                    <input type="text" class="from_control" [(ngModel)]="boleta.direccion" name="direccion">
+                </div>
+<br>
+                <div class="form_group">
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="text" class="from_control" [(ngModel)]="boleta.cantidad" name="cantidad">
+                </div>
+<br>
+                <div class="form_group">
+                    <label for="descripcion">Descripcion:</label>
+                    <input type="text" class="from_control" [(ngModel)]="boleta.descripcion" name="descripcion">
+                </div>
+<br>
+                <div class="form_group">
+                    <label for="importe">Importe:</label>
+                    <input type="text" class="from_control" [(ngModel)]="boleta.importe" name="importe">
+                </div>
+<br>
+                <div class="form_group">
+                    <label for="total">Total:</label>
+                    <input type="text" class="from_control" [(ngModel)]="boleta.total" name="total">
+                </div>
+<br>
+<br>
+                <button (click)="Guardar()" class="btn btn-danger" red><a href="http://localhost:4200/listar">Guardar</a> </button>
+
+            </form>
+        </div>
+    </div>
+</div>
